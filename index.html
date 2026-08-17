@@ -3,338 +3,326 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aalaya Aqua Care – RO Water Purifiers | Sirkali</title>
-<meta name="description" content="Aalaya Aqua Care – RO water purifier sales, installation, repair & service in Sirkali, Vilanthidasamuthiram, Mayiladuthurai & nearby areas. Call or WhatsApp 98432 31128.">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&display=swap" rel="stylesheet">
+<title>Aalaya Aqua Care – RO Water Purifier Sales &amp; Service, Sirkali</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+  :root{
+    --navy:#07304a;
+    --navy-2:#0b3f5f;
+    --blue:#0e86c9;
+    --blue-2:#0a6ba3;
+    --cyan:#22b8e0;
+    --ink:#0a2740;
+    --slate:#4c6478;
+    --slate-lt:#7891a3;
+    --line:#dbe7ee;
+    --bg-soft:#f2f8fb;
+    --green:#189b53;
+    --amber:#e2a012;
+  }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
-  body{font-family:'Manrope',sans-serif;color:#0b1b2b;background:#fbfdfe;font-size:17px;line-height:1.65;overflow-x:hidden;}
-  h1,h2,h3,.font-display{font-family:'Fraunces',serif;}
-  img{max-width:100%;display:block;}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;font-size:17px;line-height:1.7;overflow-x:hidden;}
+  h1,h2,h3,h4,.disp{font-family:'Poppins',sans-serif;}
+  img{display:block;max-width:100%;}
   a{color:inherit;}
-  button{font-family:inherit;}
 
-  :root{
-    --deep:#053a5c;
-    --ocean:#0f6fa8;
-    --sky:#1ea3d6;
-    --aqua:#5fd0d8;
-    --foam:#f2fbfc;
-    --sand:#fff9ee;
-    --ink:#08202f;
-    --muted:#4b6373;
-  }
-
-  /* ── SCROLL REVEAL ── */
-  .reveal{opacity:0;transform:translateY(38px);transition:opacity .7s cubic-bezier(.22,.68,0,1.2),transform .7s cubic-bezier(.22,.68,0,1.2);}
+  .reveal{opacity:0;transform:translateY(34px);transition:opacity .7s cubic-bezier(.22,.68,0,1.2),transform .7s cubic-bezier(.22,.68,0,1.2);}
   .reveal.from-left{transform:translateX(-46px);}
   .reveal.from-right{transform:translateX(46px);}
   .reveal.scale-up{transform:scale(.93);}
   .reveal.visible{opacity:1;transform:translateY(0) translateX(0) scale(1);}
-  .reveal-delay-1{transition-delay:.08s;} .reveal-delay-2{transition-delay:.16s;}
-  .reveal-delay-3{transition-delay:.24s;} .reveal-delay-4{transition-delay:.32s;}
-  .reveal-delay-5{transition-delay:.40s;} .reveal-delay-6{transition-delay:.48s;}
+  .rd1{transition-delay:.08s;} .rd2{transition-delay:.16s;} .rd3{transition-delay:.24s;}
+  .rd4{transition-delay:.32s;} .rd5{transition-delay:.4s;} .rd6{transition-delay:.48s;}
 
-  /* ripple ambient behind hero */
-  .ripple-bg{position:absolute;inset:0;overflow:hidden;z-index:0;pointer-events:none;}
-  .ripple-bg span{position:absolute;border-radius:50%;border:1.5px solid rgba(31,163,214,0.18);animation:ripple 6s ease-out infinite;}
-  .ripple-bg span:nth-child(1){width:220px;height:220px;top:-60px;right:8%;animation-delay:0s;}
-  .ripple-bg span:nth-child(2){width:340px;height:340px;top:-120px;right:2%;animation-delay:1.4s;}
-  .ripple-bg span:nth-child(3){width:460px;height:460px;top:-180px;right:-4%;animation-delay:2.8s;}
-  @keyframes ripple{0%{transform:scale(.85);opacity:.9;}100%{transform:scale(1.25);opacity:0;}}
+  /* ripple buttons */
+  .ripple{position:relative;overflow:hidden;}
+  .ripple::after{content:'';position:absolute;border-radius:50%;background:rgba(255,255,255,.55);
+    width:8px;height:8px;left:var(--rx,50%);top:var(--ry,50%);transform:translate(-50%,-50%) scale(0);
+    opacity:0;pointer-events:none;}
+  .ripple.rippling::after{animation:rip .55s ease-out;}
+  @keyframes rip{to{transform:translate(-50%,-50%) scale(40);opacity:0;}}
 
-  /* ── NAV ── */
-  nav{position:sticky;top:0;z-index:300;background:rgba(251,253,254,0.9);backdrop-filter:blur(16px);
-    border-bottom:1px solid #e2eef3;padding:0 5vw;height:76px;display:flex;align-items:center;justify-content:space-between;transition:box-shadow .3s;}
-  nav.scrolled{box-shadow:0 6px 28px rgba(5,58,92,0.08);}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:300;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);padding:0 48px;height:76px;display:flex;align-items:center;
+    justify-content:space-between;transition:box-shadow .3s;}
+  nav.scrolled{box-shadow:0 6px 26px rgba(7,48,74,.1);}
   .nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none;}
-  .logo-mark svg{width:52px;height:52px;display:block;}
-  .nav-logo-text{display:flex;flex-direction:column;line-height:1.18;}
-  .nav-logo-text strong{font-family:'Fraunces',serif;font-size:20px;font-weight:800;color:var(--deep);letter-spacing:-0.4px;}
-  .nav-logo-text span{font-size:10.5px;color:var(--ocean);font-weight:700;letter-spacing:2px;text-transform:uppercase;}
+  .nav-logo img{height:52px;width:auto;border-radius:8px;}
+  .nav-logo-text{display:flex;flex-direction:column;line-height:1.2;}
+  .nav-logo-text strong{font-size:19px;font-weight:900;color:var(--navy);letter-spacing:-.3px;}
+  .nav-logo-text span{font-size:11px;color:var(--blue);font-weight:700;letter-spacing:1.6px;text-transform:uppercase;}
   .nav-links{display:flex;gap:32px;list-style:none;}
-  .nav-links a{text-decoration:none;color:#33495a;font-size:15.5px;font-weight:600;position:relative;padding-bottom:3px;}
-  .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--sky);border-radius:2px;transition:width .25s;}
+  .nav-links a{text-decoration:none;color:#334a5e;font-size:15.5px;font-weight:600;position:relative;padding-bottom:3px;}
+  .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--blue);border-radius:2px;transition:width .25s;}
   .nav-links a:hover::after{width:100%;}
-  .nav-cta-group{display:flex;align-items:center;gap:10px;}
-  .nav-cta{background:linear-gradient(135deg,var(--sky),var(--ocean));color:#fff;border:none;padding:11px 22px;border-radius:10px;
-    font-size:14.5px;font-weight:700;cursor:pointer;text-decoration:none;box-shadow:0 6px 18px rgba(15,111,168,0.35);
-    transition:transform .2s,box-shadow .2s;white-space:nowrap;}
-  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(15,111,168,0.45);}
-  .nav-wa{width:44px;height:44px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;
-    text-decoration:none;box-shadow:0 6px 16px rgba(37,211,102,0.4);transition:transform .2s;flex-shrink:0;}
-  .nav-wa:hover{transform:translateY(-2px) scale(1.05);}
-  .nav-wa svg{width:22px;height:22px;fill:#fff;}
+  .nav-links a:hover{color:var(--blue);}
+  .nav-cta{background:linear-gradient(135deg,var(--blue),var(--blue-2));color:#fff;border:none;padding:12px 22px;
+    border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;text-decoration:none;
+    box-shadow:0 6px 18px rgba(14,134,201,.35);transition:transform .2s,box-shadow .2s;display:inline-flex;align-items:center;gap:8px;}
+  .nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(14,134,201,.45);}
 
-  /* ── HERO ── */
-  .hero-wrap{max-width:1280px;margin:0 auto;padding:0 5vw;position:relative;}
-  .hero{padding:64px 0 60px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;z-index:1;}
-  .hero-badge{display:inline-flex;align-items:center;gap:7px;background:var(--foam);color:var(--ocean);font-size:13.5px;font-weight:800;
-    padding:8px 16px;border-radius:22px;margin-bottom:22px;border:1px solid #bfe7f4;}
-  .hero-badge::before{content:'💧';}
-  .hero h1{font-size:56px;font-weight:800;line-height:1.05;letter-spacing:-1.6px;color:var(--ink);margin-bottom:20px;}
-  .hero h1 em{font-style:normal;color:var(--sky);background:linear-gradient(120deg,transparent 0%,transparent 60%,rgba(95,208,216,0.35) 60%,rgba(95,208,216,0.35) 100%);}
-  .hero-desc{color:var(--muted);font-size:17.5px;line-height:1.8;margin-bottom:30px;max-width:520px;}
+  /* HERO */
+  .hero-wrap{max-width:1280px;margin:0 auto;padding:0 48px;}
+  .hero{padding:60px 0 40px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start;}
+  .hero-badge{display:inline-flex;align-items:center;gap:7px;background:#eaf7fd;color:var(--blue-2);
+    font-size:13.5px;font-weight:800;padding:8px 16px;border-radius:22px;margin-bottom:22px;border:1px solid #bfe6f4;}
+  .hero-badge::before{content:'✓';}
+  .hero h1{font-size:52px;font-weight:900;line-height:1.08;letter-spacing:-1.8px;color:var(--navy);margin-bottom:20px;}
+  .hero h1 span{color:var(--blue);}
+  .hero-desc{color:var(--slate);font-size:17px;line-height:1.8;margin-bottom:30px;max-width:520px;}
   .hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:28px;}
-  .btn-primary{background:linear-gradient(135deg,var(--sky),var(--ocean));color:#fff;border:none;padding:16px 28px;border-radius:12px;
-    font-size:15.5px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:9px;text-decoration:none;
-    box-shadow:0 8px 22px rgba(15,111,168,0.35);transition:transform .2s,box-shadow .2s;}
-  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(15,111,168,0.45);}
-  .btn-wa{background:#25D366;color:#fff;border:none;padding:16px 26px;border-radius:12px;font-size:15.5px;font-weight:700;cursor:pointer;
-    display:inline-flex;align-items:center;gap:9px;text-decoration:none;box-shadow:0 8px 22px rgba(37,211,102,0.35);transition:transform .2s,box-shadow .2s;}
-  .btn-wa:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(37,211,102,0.45);}
-  .btn-outline{background:#fff;color:#1e2b36;border:1.5px solid #cfe0e8;padding:15px 24px;border-radius:12px;font-size:15px;font-weight:700;
-    cursor:pointer;display:inline-flex;align-items:center;gap:8px;text-decoration:none;transition:border-color .2s,color .2s,transform .2s;}
-  .btn-outline:hover{border-color:var(--sky);color:var(--ocean);transform:translateY(-2px);}
-  .hero-phone{display:inline-flex;align-items:center;gap:12px;background:#fff;border:1px solid #dcecf2;border-radius:14px;
-    padding:13px 20px;font-size:16px;font-weight:800;color:var(--ink);box-shadow:0 4px 14px rgba(5,58,92,0.05);}
-  .hero-phone .p-icon{color:var(--sky);font-size:20px;}
-  .hero-phone small{display:block;font-size:12px;color:var(--muted);font-weight:500;}
+  .btn-primary{background:linear-gradient(135deg,var(--blue),var(--blue-2));color:#fff;border:none;padding:16px 28px;
+    border-radius:12px;font-size:16px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:9px;
+    text-decoration:none;box-shadow:0 8px 22px rgba(14,134,201,.35);transition:transform .2s,box-shadow .2s;}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(14,134,201,.45);}
+  .btn-outline{background:#fff;color:#334a5e;border:1.5px solid #cfe0e9;padding:15px 24px;border-radius:12px;
+    font-size:16px;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:9px;text-decoration:none;
+    transition:border-color .2s,color .2s,transform .2s;}
+  .btn-outline:hover{border-color:var(--blue);color:var(--blue);transform:translateY(-2px);}
+  .hero-phone{display:inline-flex;align-items:center;gap:13px;background:var(--bg-soft);border:1px solid var(--line);
+    border-radius:14px;padding:14px 20px;font-size:17px;font-weight:800;color:var(--navy);}
+  .hero-phone-icon{font-size:20px;}
+  .hero-phone small{display:block;font-size:12px;color:var(--slate-lt);font-weight:500;}
 
   /* Quick booking card in hero */
-  .book-card{background:#fff;border-radius:22px;padding:30px 28px;box-shadow:0 24px 64px rgba(5,58,92,0.14);border:1px solid #e6f1f5;}
-  .book-card h3{font-family:'Fraunces',serif;font-size:23px;font-weight:700;color:var(--ink);margin-bottom:4px;}
-  .book-card .sub{font-size:13.5px;color:var(--muted);margin-bottom:20px;}
-  .book-field{margin-bottom:14px;}
-  .book-field label{display:block;font-size:12.5px;font-weight:700;color:#33495a;margin-bottom:6px;text-transform:uppercase;letter-spacing:.4px;}
-  .book-field input,.book-field select{width:100%;padding:13px 14px;border:1.5px solid #d7e4ea;border-radius:10px;font-size:15px;
-    font-family:inherit;color:var(--ink);outline:none;transition:border-color .2s,box-shadow .2s;background:#fbfdfe;}
-  .book-field input:focus,.book-field select:focus{border-color:var(--sky);box-shadow:0 0 0 4px rgba(30,163,214,0.12);}
-  .book-field select{appearance:none;background:#fbfdfe url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%234b6373' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") no-repeat right 14px center;}
-  .book-submit{width:100%;background:#25D366;color:#fff;border:none;padding:16px;border-radius:11px;font-size:15.5px;font-weight:800;
-    cursor:pointer;display:flex;align-items:center;justify-content:center;gap:9px;box-shadow:0 8px 22px rgba(37,211,102,0.35);
-    transition:transform .2s,box-shadow .2s;margin-top:4px;}
-  .book-submit:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(37,211,102,0.45);}
-  .book-note{font-size:11.5px;color:#94a8b3;text-align:center;margin-top:12px;}
+  .book-card{background:#fff;border:1.5px solid var(--line);border-radius:20px;padding:28px 26px;
+    box-shadow:0 22px 55px rgba(7,48,74,.13);position:relative;}
+  .book-card::before{content:'📅 Book in 30 seconds';position:absolute;top:-15px;left:26px;background:var(--navy);
+    color:#fff;font-size:12.5px;font-weight:800;padding:7px 14px;border-radius:20px;letter-spacing:.3px;}
+  .book-card h3{font-size:21px;font-weight:800;color:var(--navy);margin:10px 0 4px;}
+  .book-card .bsub{font-size:13.5px;color:var(--slate);margin-bottom:18px;}
+  .bform-group{margin-bottom:12px;}
+  .bform-group label{display:block;font-size:13px;font-weight:700;color:#334a5e;margin-bottom:5px;}
+  .bform-group input,.bform-group select{width:100%;padding:12px 14px;border:1.5px solid #d3e2ea;border-radius:10px;
+    font-size:14.5px;font-family:inherit;color:var(--navy);outline:none;transition:border-color .2s,box-shadow .2s;background:#fff;}
+  .bform-group input:focus,.bform-group select:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(14,134,201,.13);}
+  .bform-group select{appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237891a3' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") no-repeat right 12px center;}
+  .btn-book{width:100%;background:linear-gradient(135deg,var(--green),#0f7d42);color:#fff;border:none;padding:15px;
+    border-radius:11px;font-size:16px;font-weight:800;cursor:pointer;font-family:inherit;
+    box-shadow:0 8px 20px rgba(24,155,83,.3);transition:transform .2s,box-shadow .2s;display:flex;align-items:center;
+    justify-content:center;gap:8px;margin-top:4px;}
+  .btn-book:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(24,155,83,.4);}
+  .book-note{font-size:12px;color:var(--slate-lt);text-align:center;margin-top:10px;}
 
-  /* ── SECTION COMMONS ── */
-  section{padding:96px 5vw;}
-  .container{max-width:1220px;margin:0 auto;}
-  .eyebrow{font-size:13px;font-weight:800;color:var(--ocean);letter-spacing:2.4px;text-transform:uppercase;margin-bottom:14px;}
-  .section-title{font-size:42px;font-weight:800;letter-spacing:-1.4px;color:var(--ink);line-height:1.12;margin-bottom:16px;}
-  .section-sub{font-size:17px;color:var(--muted);max-width:600px;line-height:1.8;margin-bottom:56px;}
-  .text-center{text-align:center;}
-
-  /* ── RATINGS STRIP ── */
-  .ratings-strip{background:var(--foam);border-top:1px solid #dcecf2;border-bottom:1px solid #dcecf2;padding:26px 5vw;}
-  .ratings-inner{max-width:1220px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+  /* ratings strip */
+  .ratings-strip{background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 48px;}
+  .ratings-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
   .rating-item{display:flex;align-items:center;gap:11px;}
   .rating-stars{display:flex;gap:2px;}
-  .star{color:#f5a623;font-size:19px;}
-  .rating-item .r-text strong{font-size:16px;font-weight:800;color:var(--ink);}
-  .rating-item .r-text span{font-size:13px;color:var(--muted);display:block;}
-  .rating-divider{width:1px;height:40px;background:#cfe0e8;}
+  .star{color:var(--amber);font-size:19px;}
+  .rating-item .r-text strong{font-size:15.5px;font-weight:800;color:var(--navy);}
+  .rating-item .r-text span{font-size:12.5px;color:var(--slate);display:block;}
+  .rating-divider{width:1px;height:38px;background:var(--line);}
 
-  /* ── ABOUT ── */
-  .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
-  .about-img{border-radius:20px;overflow:hidden;height:400px;background:linear-gradient(135deg,var(--foam),#dff3f8);position:relative;}
-  .about-img img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;}
-  .img-fallback{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#8fb8c7;}
-  .img-fallback .ic{font-size:38px;}
-  .img-fallback span{font-size:12.5px;font-weight:700;color:#a8c8d4;letter-spacing:.3px;}
+  section{padding:96px 48px;}
+  .container{max-width:1200px;margin:0 auto;}
+  .eyebrow{font-size:12.5px;font-weight:800;color:var(--blue);letter-spacing:2px;text-transform:uppercase;margin-bottom:13px;}
+  .section-title{font-size:40px;font-weight:900;letter-spacing:-1.4px;color:var(--navy);line-height:1.14;margin-bottom:16px;}
+  .section-sub{font-size:16.5px;color:var(--slate);max-width:600px;line-height:1.8;margin-bottom:54px;}
+  .text-center{text-align:center;}
+
+  /* ABOUT */
+  .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+  .about-img{border-radius:20px;overflow:hidden;height:400px;background:var(--bg-soft);box-shadow:0 20px 50px rgba(7,48,74,.12);}
+  .about-img img{width:100%;height:100%;object-fit:cover;}
   .about-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px;}
-  .about-feature{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:#233542;
-    background:var(--foam);border:1px solid #dcecf2;border-radius:12px;padding:14px 16px;transition:border-color .2s,color .2s,transform .2s;}
-  .about-feature:hover{border-color:var(--sky);color:var(--ocean);transform:translateY(-2px);}
-  .about-feature .icon{color:var(--sky);font-size:17px;}
+  .about-feature{display:flex;align-items:center;gap:10px;font-size:14.5px;font-weight:700;color:#334a5e;
+    background:var(--bg-soft);border:1px solid var(--line);border-radius:11px;padding:13px 16px;transition:border-color .2s,color .2s,transform .2s;}
+  .about-feature:hover{border-color:var(--blue);color:var(--blue-2);transform:translateY(-2px);}
+  .about-feature .icon{color:var(--blue);font-size:16px;}
 
-  /* ── SERVICES ── */
-  .services{background:var(--foam);}
+  /* SERVICES */
+  .services{background:var(--bg-soft);}
   .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
-  .service-card{background:#fff;border:1px solid #dcecf2;border-radius:16px;padding:30px 24px;transition:transform .3s,box-shadow .3s,border-color .3s;}
-  .service-card:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(15,111,168,0.14);border-color:#bfe7f4;}
-  .service-card .s-icon{font-size:28px;margin-bottom:16px;}
-  .service-card h3{font-size:16.5px;font-weight:800;color:var(--ink);margin-bottom:9px;line-height:1.32;}
-  .service-card p{font-size:14px;color:var(--muted);line-height:1.7;}
+  .service-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px 24px;
+    transition:transform .3s,box-shadow .3s,border-color .3s;}
+  .service-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(14,134,201,.13);border-color:#bfe6f4;}
+  .service-card .s-icon{font-size:27px;margin-bottom:15px;}
+  .service-card h3{font-size:16px;font-weight:800;color:var(--navy);margin-bottom:9px;line-height:1.32;}
+  .service-card p{font-size:14px;color:var(--slate);line-height:1.7;}
 
-  /* ── GALLERY ── */
-  .gallery{background:#fff;}
-  .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
-  .gallery-grid .g-tall{grid-row:span 2;}
-  .g-slot{border-radius:16px;overflow:hidden;background:linear-gradient(135deg,var(--foam),#e4f4f8);border:1.5px solid #dcecf2;
-    position:relative;min-height:170px;display:flex;align-items:center;justify-content:center;transition:border-color .2s,box-shadow .2s;}
-  .g-slot:hover{border-color:var(--sky);box-shadow:0 14px 34px rgba(15,111,168,0.14);}
-  .g-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;}
-  .g-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(0deg,rgba(5,20,32,0.72),transparent);
-    color:#fff;font-size:12.5px;font-weight:700;padding:26px 14px 12px;z-index:2;}
+  /* GALLERY (products / shelves) */
+  .gallery-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:16px;}
+  .gal-main{border-radius:18px;overflow:hidden;height:420px;box-shadow:0 20px 48px rgba(7,48,74,.12);position:relative;}
+  .gal-main img{width:100%;height:100%;object-fit:cover;}
+  .gal-side{display:grid;grid-template-rows:1fr 1fr;gap:16px;}
+  .gal-side .slot{border-radius:18px;overflow:hidden;height:202px;box-shadow:0 16px 38px rgba(7,48,74,.1);}
+  .gal-side .slot img{width:100%;height:100%;object-fit:cover;}
+  .gal-tag{position:absolute;bottom:16px;left:16px;background:rgba(7,48,74,.85);backdrop-filter:blur(6px);color:#fff;
+    font-size:13px;font-weight:700;padding:9px 15px;border-radius:11px;}
 
-  /* ── PRODUCTS / BRANDS ── */
-  .brands{background:var(--foam);}
-  .brands-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
-  .brand-chip{background:#fff;border:1px solid #dcecf2;border-radius:13px;padding:16px 18px;font-size:14.5px;font-weight:700;
-    color:var(--ink);text-align:center;transition:border-color .2s,background .2s,transform .2s;}
-  .brand-chip:hover{border-color:var(--sky);background:#f0fbfd;transform:translateY(-2px);}
-  .brand-chip.highlight{grid-column:span 2;background:linear-gradient(135deg,var(--sky),var(--ocean));color:#fff;font-weight:800;border:none;}
+  .products-right{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;}
+  .product-card{display:flex;align-items:center;gap:13px;background:#fff;border:1px solid var(--line);border-radius:13px;
+    padding:16px 18px;font-size:14.5px;font-weight:700;color:var(--navy);transition:border-color .2s,background .2s,transform .2s;}
+  .product-card:hover{border-color:var(--blue);background:#f0faff;transform:translateY(-2px);}
+  .product-card .p-icon{color:var(--blue);font-size:19px;}
 
-  /* ── WHY US ── */
-  .why{background:var(--deep);color:#fff;position:relative;overflow:hidden;}
+  /* WHY */
+  .why{background:var(--navy);color:#fff;position:relative;overflow:hidden;}
   .why .section-title{color:#fff;}
-  .why .eyebrow{color:var(--aqua);}
+  .why .eyebrow{color:var(--cyan);}
   .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
-  .why-item{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);border-radius:15px;padding:24px 18px;
-    display:flex;align-items:center;gap:12px;font-size:15px;font-weight:700;color:#e3f2f6;transition:background .25s,border-color .25s,transform .25s;}
-  .why-item:hover{background:rgba(255,255,255,0.12);border-color:var(--aqua);transform:translateY(-4px);}
+  .why-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:15px;
+    padding:22px 18px;display:flex;align-items:center;gap:12px;font-size:14.5px;font-weight:700;color:#e8f3fa;
+    transition:background .25s,border-color .25s,transform .25s;}
+  .why-item:hover{background:rgba(34,184,224,.14);border-color:var(--cyan);transform:translateY(-3px);}
   .why-item .w-icon{font-size:20px;}
 
-  /* ── PROCESS ── */
+  /* PROCESS */
   .process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:56px;}
   .process-step{position:relative;padding-left:4px;}
-  .step-num{font-family:'Fraunces',serif;font-size:42px;font-weight:700;color:#bfe7f4;margin-bottom:10px;line-height:1;}
-  .process-step h3{font-size:17px;font-weight:800;color:var(--ink);margin-bottom:8px;}
-  .process-step p{font-size:14.5px;color:var(--muted);line-height:1.7;}
+  .step-num{font-size:40px;font-weight:900;color:#bfe6f4;margin-bottom:9px;line-height:1;}
+  .process-step h3{font-size:16.5px;font-weight:800;color:var(--navy);margin-bottom:8px;}
+  .process-step p{font-size:14px;color:var(--slate);line-height:1.7;}
 
-  /* ── SERVICE AREAS ── */
-  .areas-section{padding:0 5vw 90px;}
-  .areas{background:linear-gradient(135deg,var(--deep) 0%,var(--ocean) 55%,var(--sky) 100%);border-radius:26px;padding:56px 60px;
-    display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;max-width:1220px;margin:0 auto;
-    box-shadow:0 28px 70px rgba(15,111,168,0.28);}
-  .areas .eyebrow{color:rgba(255,255,255,0.75);}
-  .areas h2{font-size:36px;font-weight:800;color:#fff;letter-spacing:-1.1px;line-height:1.14;margin-bottom:16px;}
-  .areas p{color:rgba(255,255,255,0.9);font-size:15.5px;line-height:1.8;}
+  /* REVIEWS */
+  .reviews{background:var(--bg-soft);}
+  .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .review-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px 26px;
+    transition:transform .3s,box-shadow .3s;}
+  .review-card:hover{transform:translateY(-5px);box-shadow:0 16px 38px rgba(14,134,201,.12);}
+  .review-stars{display:flex;gap:3px;margin-bottom:14px;}
+  .review-stars .star{font-size:16px;}
+  .review-text{font-size:14.5px;color:#334a5e;line-height:1.75;margin-bottom:20px;}
+  .reviewer{display:flex;align-items:center;gap:11px;}
+  .reviewer-avatar{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));
+    display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:800;color:#fff;flex-shrink:0;}
+  .reviewer-info strong{font-size:14px;font-weight:700;color:var(--navy);display:block;}
+  .reviewer-info span{font-size:12.5px;color:var(--slate-lt);}
+
+  /* SERVICE AREAS */
+  .areas-section{padding:0 48px 88px;}
+  .areas{background:linear-gradient(135deg,#053353 0%,#0e86c9 60%,#22b8e0 100%);border-radius:24px;padding:52px 58px;
+    display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;max-width:1200px;margin:0 auto;
+    box-shadow:0 26px 68px rgba(14,134,201,.28);}
+  .areas .eyebrow{color:rgba(255,255,255,.75);}
+  .areas h2{font-size:35px;font-weight:900;color:#fff;letter-spacing:-1.1px;line-height:1.14;margin-bottom:15px;}
+  .areas p{color:rgba(255,255,255,.9);font-size:15px;line-height:1.8;}
   .areas-tags{display:flex;flex-wrap:wrap;gap:10px;}
-  .area-tag{background:rgba(255,255,255,0.18);color:#fff;font-size:14px;font-weight:700;padding:8px 18px;border-radius:22px;
-    border:1px solid rgba(255,255,255,0.32);backdrop-filter:blur(4px);}
+  .area-tag{background:rgba(255,255,255,.18);color:#fff;font-size:13.5px;font-weight:700;padding:8px 17px;
+    border-radius:22px;border:1px solid rgba(255,255,255,.32);backdrop-filter:blur(4px);}
 
-  /* ── CONTACT ── */
+  /* CONTACT */
   .contact-intro{text-align:center;margin-bottom:56px;}
   .contact-intro .section-sub{margin:0 auto;}
-  .contact-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:30px;align-items:start;}
-  .contact-info{background:var(--deep);border-radius:22px;padding:44px 40px;color:#fff;}
-  .contact-info h3{font-family:'Fraunces',serif;font-size:25px;font-weight:700;margin-bottom:8px;}
-  .contact-info .addr{font-size:14.5px;color:#bcd6e0;margin-bottom:30px;line-height:1.75;}
-  .contact-phone-box{background:rgba(255,255,255,0.08);border-radius:14px;padding:18px 22px;margin-bottom:20px;}
-  .contact-phone-box .label{font-size:11.5px;color:#8fb8c7;text-transform:uppercase;letter-spacing:1.4px;margin-bottom:6px;}
-  .contact-phone-box .number{font-size:25px;font-weight:800;color:var(--aqua);}
-  .contact-btns{display:flex;gap:12px;margin-bottom:30px;flex-wrap:wrap;}
-  .btn-teal{background:#0d9488;color:#fff;border:none;padding:14px 20px;border-radius:11px;font-size:14.5px;font-weight:700;
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start;}
+  .contact-info{background:var(--navy);border-radius:20px;padding:42px 40px;color:#fff;}
+  .contact-info h3{font-size:24px;font-weight:900;margin-bottom:7px;}
+  .contact-info .addr{font-size:14px;color:#a9c2d2;margin-bottom:28px;line-height:1.7;}
+  .contact-phone-box{background:rgba(255,255,255,.08);border-radius:13px;padding:17px 20px;margin-bottom:12px;}
+  .contact-phone-box .label{font-size:11.5px;color:#8fb0c4;text-transform:uppercase;letter-spacing:1px;margin-bottom:5px;}
+  .contact-phone-box .number{font-size:23px;font-weight:900;color:var(--cyan);}
+  .contact-btns{display:flex;gap:11px;margin:22px 0 28px;flex-wrap:wrap;}
+  .btn-teal{background:#0d9488;color:#fff;border:none;padding:13px 19px;border-radius:10px;font-size:14px;font-weight:700;
     cursor:pointer;display:inline-flex;align-items:center;gap:8px;text-decoration:none;transition:background .2s,transform .2s;}
   .btn-teal:hover{background:#0f766e;transform:translateY(-2px);}
-  .btn-green{background:#16a34a;color:#fff;border:none;padding:14px 20px;border-radius:11px;font-size:14.5px;font-weight:700;
+  .btn-green{background:#16a34a;color:#fff;border:none;padding:13px 19px;border-radius:10px;font-size:14px;font-weight:700;
     cursor:pointer;display:inline-flex;align-items:center;gap:8px;text-decoration:none;transition:background .2s,transform .2s;}
   .btn-green:hover{background:#15803d;transform:translateY(-2px);}
-  .map-box{border-radius:14px;overflow:hidden;border:2px solid rgba(255,255,255,0.14);}
-  .map-box iframe{width:100%;height:280px;border:0;display:block;}
-  .contact-form{background:#fff;border:1.5px solid #dcecf2;border-radius:22px;padding:44px 40px;}
-  .contact-form h3{font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:var(--ink);margin-bottom:8px;}
-  .contact-form .form-sub{font-size:14.5px;color:var(--muted);margin-bottom:28px;line-height:1.7;}
-  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .hours-box{background:rgba(255,255,255,.08);border-radius:13px;padding:18px 20px;font-size:13.5px;color:#cfe3ee;line-height:1.9;}
+  .hours-box strong{color:#fff;}
+  .map-embed{border-radius:14px;overflow:hidden;margin-top:16px;border:1px solid rgba(255,255,255,.15);}
+  .contact-form{background:#fff;border:1.5px solid var(--line);border-radius:20px;padding:42px 40px;}
+  .contact-form h3{font-size:22px;font-weight:900;color:var(--navy);margin-bottom:7px;}
+  .contact-form .form-sub{font-size:14px;color:var(--slate);margin-bottom:28px;line-height:1.7;}
   .form-group{margin-bottom:18px;}
-  .form-group label{display:block;font-size:13.5px;font-weight:700;color:#33495a;margin-bottom:7px;}
-  .form-group input,.form-group select,.form-group textarea{width:100%;padding:14px 16px;border:1.5px solid #d7e4ea;border-radius:11px;
-    font-size:15px;font-family:inherit;color:var(--ink);outline:none;transition:border-color .2s,box-shadow .2s;background:#fff;}
-  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--sky);box-shadow:0 0 0 4px rgba(30,163,214,0.12);}
-  .form-group textarea{height:110px;resize:vertical;}
-  .form-group select{appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") no-repeat right 14px center;}
-  .btn-submit{width:100%;background:linear-gradient(135deg,var(--sky),var(--ocean));color:#fff;border:none;padding:17px;border-radius:12px;
-    font-size:16px;font-weight:800;cursor:pointer;font-family:inherit;box-shadow:0 8px 22px rgba(15,111,168,0.32);
-    transition:transform .2s,box-shadow .2s;display:flex;align-items:center;justify-content:center;gap:9px;}
-  .btn-submit:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(15,111,168,0.42);}
-  .form-success{display:none;background:#ecfdf5;border:1.5px solid #a7f3d0;color:#047857;border-radius:12px;padding:14px 18px;
-    font-size:14px;font-weight:700;margin-top:14px;align-items:center;gap:8px;}
-  .form-success.show{display:flex;}
+  .form-group label{display:block;font-size:13.5px;font-weight:700;color:#334a5e;margin-bottom:7px;}
+  .form-group input,.form-group select,.form-group textarea{width:100%;padding:13px 16px;border:1.5px solid #d3e2ea;
+    border-radius:11px;font-size:15px;font-family:inherit;color:var(--navy);outline:none;
+    transition:border-color .2s,box-shadow .2s;background:#fff;}
+  .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--blue);
+    box-shadow:0 0 0 3px rgba(14,134,201,.13);}
+  .form-group input::placeholder,.form-group textarea::placeholder{color:#9db4c2;}
+  .form-group textarea{height:104px;resize:vertical;}
+  .form-group select{appearance:none;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237891a3' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") no-repeat right 14px center;}
+  .btn-submit{width:100%;background:linear-gradient(135deg,var(--blue),var(--blue-2));color:#fff;border:none;padding:16px;
+    border-radius:12px;font-size:16.5px;font-weight:800;cursor:pointer;font-family:inherit;
+    box-shadow:0 8px 20px rgba(14,134,201,.3);transition:transform .2s,box-shadow .2s;}
+  .btn-submit:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(14,134,201,.4);}
 
-  /* ── FOOTER ── */
-  footer{background:var(--deep);color:#cfe0e8;padding:70px 5vw 34px;}
-  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr 1.5fr;gap:48px;max-width:1220px;margin:0 auto 48px;}
-  .footer-brand p{font-size:14px;color:#8fb8c7;line-height:1.8;margin:16px 0 20px;}
-  .footer-socials{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
-  .footer-socials a{width:40px;height:40px;background:rgba(255,255,255,0.08);border-radius:10px;display:flex;align-items:center;
-    justify-content:center;color:#cfe0e8;text-decoration:none;transition:background .2s,transform .2s;}
-  .footer-socials a:hover{background:var(--sky);transform:translateY(-2px);}
-  .footer-col h4{font-family:'Fraunces',serif;font-size:15px;font-weight:700;color:#fff;margin-bottom:18px;letter-spacing:.3px;}
+  /* FLOATING WHATSAPP */
+  .float-wa{position:fixed;bottom:26px;right:26px;z-index:400;width:62px;height:62px;border-radius:50%;
+    background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 28px rgba(37,211,102,.45);
+    text-decoration:none;animation:pulse 2.4s infinite;}
+  @keyframes pulse{0%{box-shadow:0 10px 28px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.5);}
+    70%{box-shadow:0 10px 28px rgba(37,211,102,.45),0 0 0 16px rgba(37,211,102,0);}
+    100%{box-shadow:0 10px 28px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,0);}}
+
+  /* FOOTER */
+  footer{background:var(--navy);color:#cfe0ea;padding:68px 48px 30px;}
+  .footer-grid{display:grid;grid-template-columns:2fr 1fr 1.4fr 1.5fr;gap:46px;max-width:1200px;margin:0 auto 46px;}
+  .footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+  .footer-brand img{height:44px;border-radius:8px;}
+  .footer-brand span{font-size:18px;font-weight:900;color:#fff;}
+  .footer-col p.desc{font-size:13.5px;color:#8fb0c4;line-height:1.8;margin-bottom:20px;max-width:280px;}
+  .footer-socials{display:flex;gap:10px;flex-wrap:wrap;}
+  .footer-socials a{width:38px;height:38px;background:rgba(255,255,255,.08);border-radius:10px;display:flex;
+    align-items:center;justify-content:center;color:#cfe0ea;text-decoration:none;transition:background .2s,color .2s;}
+  .footer-socials a:hover{background:var(--blue);color:#fff;}
+  .footer-col h4{font-size:13.5px;font-weight:800;color:#fff;margin-bottom:17px;letter-spacing:.4px;text-transform:uppercase;}
   .footer-col ul{list-style:none;}
-  .footer-col ul li{margin-bottom:11px;}
-  .footer-col ul li a{font-size:14px;color:#8fb8c7;text-decoration:none;transition:color .2s;}
-  .footer-col ul li a:hover{color:var(--aqua);}
-  .footer-col .contact-detail{font-size:14px;color:#8fb8c7;line-height:1.9;}
-  .footer-bottom{border-top:1px solid rgba(255,255,255,0.12);padding-top:24px;display:flex;justify-content:space-between;
-    align-items:center;max-width:1220px;margin:0 auto;flex-wrap:wrap;gap:10px;}
-  .footer-bottom p{font-size:13px;color:#5f8496;}
+  .footer-col ul li{margin-bottom:10px;}
+  .footer-col ul li a{font-size:13.5px;color:#8fb0c4;text-decoration:none;transition:color .2s;}
+  .footer-col ul li a:hover{color:var(--cyan);}
+  .footer-col .contact-detail{font-size:13.5px;color:#8fb0c4;line-height:1.9;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;
+    align-items:center;max-width:1200px;margin:0 auto;flex-wrap:wrap;gap:10px;}
+  .footer-bottom p{font-size:12.5px;color:#658296;}
 
-  /* ── FLOATING WHATSAPP BUTTON ── */
-  .float-wa{position:fixed;bottom:26px;right:26px;width:60px;height:60px;border-radius:50%;background:#25D366;
-    display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(37,211,102,0.5);z-index:500;
-    text-decoration:none;animation:pulse-wa 2.6s ease-in-out infinite;}
-  .float-wa svg{width:30px;height:30px;fill:#fff;}
-  @keyframes pulse-wa{0%,100%{transform:scale(1);}50%{transform:scale(1.08);}}
-
-  /* ── RESPONSIVE ── */
   @media (max-width:960px){
-    .hero,.about-inner,.contact-grid,.areas{grid-template-columns:1fr;}
-    .services-grid,.why-grid,.brands-grid,.process-steps{grid-template-columns:1fr 1fr;}
-    .gallery-grid{grid-template-columns:1fr 1fr;}
-    .g-tall{grid-row:span 1;}
-    nav{padding:0 20px;}
-    .nav-links{display:none;}
-    section{padding:64px 20px;}
-    .areas-section{padding:0 20px 64px;}
-    .areas{padding:40px 28px;}
+    .hero,.about-inner,.gallery-grid,.contact-grid,.areas{grid-template-columns:1fr;}
+    .services-grid,.why-grid,.process-steps,.reviews-grid{grid-template-columns:1fr 1fr;}
+    nav{padding:0 20px;} .nav-links{display:none;}
+    section{padding:60px 20px;} .areas-section{padding:0 20px 64px;} .areas{padding:38px 28px;}
     .footer-grid{grid-template-columns:1fr 1fr;}
-    .hero-wrap{padding:0 20px;}
-    .ratings-strip{padding:20px 20px;}
-    .hero h1{font-size:40px;}
-    .section-title{font-size:30px;}
-    .form-row{grid-template-columns:1fr;}
+    .hero-wrap{padding:0 20px;} .ratings-strip{padding:20px;}
+    .hero h1{font-size:38px;} .section-title{font-size:29px;}
+    .gal-main{height:300px;} .gal-side .slot{height:150px;}
   }
   @media (max-width:560px){
-    .services-grid,.why-grid,.gallery-grid,.brands-grid{grid-template-columns:1fr 1fr;}
+    .services-grid,.why-grid,.reviews-grid,.products-right{grid-template-columns:1fr;}
     .process-steps{grid-template-columns:1fr 1fr;}
     .footer-grid{grid-template-columns:1fr;}
-    .ratings-inner{flex-direction:column;align-items:flex-start;gap:16px;}
+    .ratings-inner{flex-direction:column;align-items:flex-start;gap:15px;}
     .rating-divider{display:none;}
-    .hero h1{font-size:32px;}
-    body{font-size:16px;}
+    .book-card{padding:24px 20px;}
   }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="mainNav">
   <a class="nav-logo" href="#">
-    <div class="logo-mark">
-      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-        <ellipse cx="50" cy="50" rx="48" ry="34" fill="#053a5c" stroke="#1ea3d6" stroke-width="2"/>
-        <text x="50" y="42" text-anchor="middle" font-family="Fraunces, serif" font-weight="800" font-size="17" fill="#fff" letter-spacing="0.5">AALAYA</text>
-        <text x="50" y="58" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="700" font-size="9" fill="#5fd0d8" letter-spacing="1.5">AQUA CARE</text>
-        <text x="50" y="70" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="500" font-size="5" fill="#bcd6e0" letter-spacing="0.6">NO LIFE WITHOUT PURE WATER</text>
-      </svg>
-    </div>
+    <img src="images/logo.png" alt="Aalaya Aqua Care Logo">
     <div class="nav-logo-text">
       <strong>Aalaya Aqua Care</strong>
-      <span>RO Water Purifiers</span>
+      <span>RO Sales &amp; Service</span>
     </div>
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#gallery">Our Store</a></li>
-    <li><a href="#book">Book a Service</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#book">Book Now</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="nav-cta-group">
-    <a class="nav-cta" href="tel:+919843231128">📞 98432 31128</a>
-    <a class="nav-wa" href="https://wa.me/919843231128" target="_blank" title="WhatsApp us">
-      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-    </a>
-  </div>
+  <a class="nav-cta ripple" href="tel:+919843231128">📞 98432 31128</a>
 </nav>
 
-<!-- HERO -->
 <div class="hero-wrap">
-  <div class="ripple-bg"><span></span><span></span><span></span></div>
   <div class="hero">
     <div class="hero-left">
-      <div class="hero-badge reveal">Trusted RO sales & service in Sirkali</div>
-      <h1 class="reveal reveal-delay-1">Pure water,<br>delivered with <em>care</em>.</h1>
-      <p class="hero-desc reveal reveal-delay-2">Aalaya Aqua Care sells, installs, and services RO, UV & UF water purifiers for homes and businesses across Sirkali, Vilanthidasamuthiram, Mayiladuthurai and nearby towns — every major brand, genuine parts, doorstep support.</p>
-      <div class="hero-actions reveal reveal-delay-3">
-        <a class="btn-primary" href="tel:+919843231128">📞 Call 98432 31128</a>
-        <a class="btn-wa" href="https://wa.me/919843231128?text=Hi%20Aalaya%20Aqua%20Care%2C%20I%20need%20help%20with%20my%20RO%20water%20purifier." target="_blank">💬 WhatsApp Us</a>
+      <div class="hero-badge reveal">Trusted RO specialist in Sirkali since years</div>
+      <h1 class="reveal rd1">No Life<br>Without <span>Pure Water.</span></h1>
+      <p class="hero-desc reveal rd2">Aalaya Aqua Care provides RO water purifier sales, installation, repair, AMC maintenance, iron removers, and complete water treatment solutions for homes, offices, schools, and industries in Sirkali, Mayiladuthurai, Chidambaram and nearby areas.</p>
+      <div class="hero-actions reveal rd3">
+        <a class="btn-primary ripple" href="tel:+919843231128">📞 Call Now</a>
+        <a class="btn-outline ripple" href="https://wa.me/919843231128" target="_blank">💬 WhatsApp Us</a>
       </div>
-      <div class="hero-phone reveal reveal-delay-4">
-        <span class="p-icon">📱</span>
+      <div class="hero-phone reveal rd4">
+        <span class="hero-phone-icon">📱</span>
         <div>
           <small>Speak with Aalaya Aqua Care</small>
           <strong>+91 98432 31128</strong>
@@ -342,409 +330,369 @@
       </div>
     </div>
 
-    <!-- Quick booking card, front and center on page load -->
-    <div class="book-card reveal from-right" id="book">
-      <h3>Book a Service</h3>
-      <p class="sub">Fill this in — it opens straight into WhatsApp with your details, ready to send.</p>
-      <form id="quickBookForm" onsubmit="sendQuickBooking(event)">
-        <div class="book-field">
-          <label>Your Name</label>
-          <input type="text" name="qname" placeholder="e.g. Name" required>
-        </div>
-        <div class="book-field">
-          <label>Phone Number</label>
-          <input type="tel" name="qphone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
-        </div>
-        <div class="book-field">
-          <label>Service Needed</label>
-          <select name="qservice" required>
-            <option value="">Select a service…</option>
-            <option>New RO purifier installation</option>
-            <option>RO service / repair</option>
-            <option>AMC maintenance plan</option>
-            <option>Filter / membrane replacement</option>
-            <option>Water quality testing</option>
-            <option>Commercial / industrial RO enquiry</option>
-          </select>
-        </div>
-        <button type="submit" class="book-submit">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Book via WhatsApp
-        </button>
-      </form>
-      <p class="book-note">No spam — this just opens a pre-filled WhatsApp chat to 98432 31128.</p>
+    <div class="hero-right">
+      <div class="book-card reveal from-right" id="book">
+        <h3>Book a Free Service Visit</h3>
+        <p class="bsub">Fill this in and we'll confirm on WhatsApp right away.</p>
+        <form id="quickBookForm" onsubmit="sendQuickBook(event)">
+          <div class="bform-group">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </div>
+          <div class="bform-group">
+            <label>Phone Number</label>
+            <input type="tel" name="phone" placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+          </div>
+          <div class="bform-group">
+            <label>Service Needed</label>
+            <select name="service" required>
+              <option value="">Select a service...</option>
+              <option>New RO Purifier Installation</option>
+              <option>RO Service / Repair</option>
+              <option>AMC Maintenance Plan</option>
+              <option>Filter / Membrane Replacement</option>
+              <option>Iron Remover Installation</option>
+              <option>Water Softener</option>
+              <option>Commercial / Industrial RO</option>
+              <option>Plumbing / Electrical Work</option>
+              <option>Other Requirement</option>
+            </select>
+          </div>
+          <div class="bform-group">
+            <label>Preferred Date (optional)</label>
+            <input type="date" name="date">
+          </div>
+          <button type="submit" class="btn-book ripple">💬 Book via WhatsApp</button>
+        </form>
+        <p class="book-note">No payment needed to book — we confirm by phone or WhatsApp.</p>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- RATINGS STRIP -->
 <div class="ratings-strip">
   <div class="ratings-inner">
     <div class="rating-item reveal">
       <div class="rating-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-      <div class="r-text"><strong>Top Rated</strong><span>Google Reviews</span></div>
+      <div class="r-text"><strong>5.0 / 5 Rating</strong><span>Google Reviews</span></div>
     </div>
-    <div class="rating-divider reveal reveal-delay-1"></div>
-    <div class="rating-item reveal reveal-delay-1">
+    <div class="rating-divider reveal rd1"></div>
+    <div class="rating-item reveal rd1">
       <div class="rating-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-      <div class="r-text"><strong>Multi-Brand Service</strong><span>All major RO brands</span></div>
+      <div class="r-text"><strong>Trusted Locally</strong><span>Sirkali &amp; Mayiladuthurai region</span></div>
     </div>
-    <div class="rating-divider reveal reveal-delay-2"></div>
-    <div class="rating-item reveal reveal-delay-2">
+    <div class="rating-divider reveal rd2"></div>
+    <div class="rating-item reveal rd2">
       <div class="rating-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-      <div class="r-text"><strong>Trusted Local Team</strong><span>Sirkali & nearby areas</span></div>
+      <div class="r-text"><strong>Sales &amp; Service</strong><span>All major purifier brands</span></div>
     </div>
-    <div class="rating-divider reveal reveal-delay-3"></div>
-    <div class="rating-item reveal reveal-delay-3">
+    <div class="rating-divider reveal rd3"></div>
+    <div class="rating-item reveal rd3">
       <div class="rating-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-      <div class="r-text"><strong>Same-Day Support</strong><span>Fast doorstep response</span></div>
+      <div class="r-text"><strong>Doorstep Service</strong><span>Fast local response</span></div>
     </div>
   </div>
 </div>
 
-<!-- ABOUT -->
-<section id="about">
+<section class="about" id="about">
   <div class="container">
     <div class="about-inner">
       <div class="about-img reveal from-left">
-        <img src="images/store-front.jpg" alt="Aalaya Aqua Care storefront" onerror="this.style.display='none'">
-        <div class="img-fallback"><span class="ic">🏪</span><span>Add images/store-front.jpg</span></div>
+        <img src="images/shopfront.jpg" alt="Aalaya Aqua Care Shop Front, Sirkali">
       </div>
       <div>
         <div class="eyebrow reveal">About Aalaya Aqua Care</div>
-        <h2 class="section-title reveal reveal-delay-1">Clean water solutions from a trusted local RO specialist.</h2>
-        <p class="reveal reveal-delay-2" style="color:var(--muted);font-size:16.5px;line-height:1.85;margin-bottom:6px;">Based in Vilanthidasamuthiram near Sirkali, Aalaya Aqua Care sells and services RO, UV and UF water purifiers for homes, offices, schools and small industries. We stock and repair every major brand, and our technicians handle installation, AMC, filter changes and troubleshooting at your doorstep.</p>
+        <h2 class="section-title reveal rd1">Clean water solutions from a trusted local RO specialist.</h2>
+        <p class="reveal rd2" style="color:var(--slate);font-size:16.5px;line-height:1.85;margin-bottom:6px;">Aalaya Aqua Care is a Sirkali-based sales and service centre for RO, UV and UF water purifiers, iron removers, and water softeners. We also handle electrical, plumbing, and air compressor work, including clearing blocked pipelines. Our team serves homes, schools, offices, and industries across Sirkali, Mayiladuthurai, and Chidambaram.</p>
         <div class="about-features">
-          <div class="about-feature reveal reveal-delay-2"><span class="icon">✓</span> Quality RO products</div>
-          <div class="about-feature reveal reveal-delay-3"><span class="icon">🔧</span> Expert installation</div>
-          <div class="about-feature reveal reveal-delay-4"><span class="icon">🚗</span> Prompt doorstep service</div>
-          <div class="about-feature reveal reveal-delay-5"><span class="icon">🛡</span> Genuine spare parts</div>
+          <div class="about-feature reveal rd2"><span class="icon">✓</span> All major RO brands</div>
+          <div class="about-feature reveal rd3"><span class="icon">🔧</span> Expert installation</div>
+          <div class="about-feature reveal rd4"><span class="icon">🚗</span> Doorstep service</div>
+          <div class="about-feature reveal rd5"><span class="icon">🛡</span> Genuine spare parts</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
 <section class="services" id="services">
   <div class="container">
     <div class="text-center">
       <div class="eyebrow reveal">Our Services</div>
-      <h2 class="section-title reveal reveal-delay-1">Complete RO and water<br>treatment support for every need.</h2>
-      <p class="section-sub reveal reveal-delay-2" style="margin:0 auto 56px;">From domestic purifiers to commercial systems, Aalaya Aqua Care helps you choose, install, maintain and repair the right water solution.</p>
+      <h2 class="section-title reveal rd1">Complete RO and water<br>treatment support for every need.</h2>
+      <p class="section-sub reveal rd2" style="margin:0 auto 54px;">From home purifiers to commercial and industrial systems, Aalaya Aqua Care helps you choose, install, maintain, and repair the right water solution.</p>
     </div>
     <div class="services-grid">
-      <div class="service-card reveal reveal-delay-1"><div class="s-icon">🏠</div><h3>Domestic RO Purifiers</h3><p>Reliable drinking water systems for apartments, houses and family use.</p></div>
-      <div class="service-card reveal reveal-delay-2"><div class="s-icon">🏢</div><h3>Commercial RO Systems</h3><p>Capacity planning and service for offices, schools, restaurants and clinics.</p></div>
-      <div class="service-card reveal reveal-delay-3"><div class="s-icon">🔩</div><h3>RO Installation</h3><p>Professional setup with proper fitment, testing and usage guidance.</p></div>
-      <div class="service-card reveal reveal-delay-4"><div class="s-icon">🔧</div><h3>RO Repair & Maintenance</h3><p>Troubleshooting for low flow, taste, leakage, pump, filter and membrane issues.</p></div>
-      <div class="service-card reveal reveal-delay-1"><div class="s-icon">📋</div><h3>AMC Contracts</h3><p>Scheduled service plans to keep your purifier performing all year.</p></div>
-      <div class="service-card reveal reveal-delay-2"><div class="s-icon">🔬</div><h3>Filter & Membrane Replacement</h3><p>Genuine filters and membranes selected for your water quality and system.</p></div>
-      <div class="service-card reveal reveal-delay-3"><div class="s-icon">💧</div><h3>Water Quality Testing</h3><p>Assess raw water TDS so you can choose the right treatment solution.</p></div>
-      <div class="service-card reveal reveal-delay-4"><div class="s-icon">🔨</div><h3>Electrical & Plumbing Work</h3><p>Fittings, line-block removal and small electrical work around your setup.</p></div>
+      <div class="service-card reveal rd1"><div class="s-icon">🏠</div><h3>Domestic RO Purifiers</h3><p>Reliable drinking water systems for homes and apartments.</p></div>
+      <div class="service-card reveal rd2"><div class="s-icon">🏢</div><h3>Commercial RO Systems</h3><p>Capacity planning and service for offices, schools, and clinics.</p></div>
+      <div class="service-card reveal rd3"><div class="s-icon">🏭</div><h3>Industrial Water Treatment</h3><p>Scalable water treatment for process and facility needs.</p></div>
+      <div class="service-card reveal rd4"><div class="s-icon">🔩</div><h3>RO Installation</h3><p>Professional setup with proper fitment and testing.</p></div>
+      <div class="service-card reveal rd1"><div class="s-icon">🔧</div><h3>Repair &amp; Maintenance</h3><p>Fixes for low flow, taste, leakage, pump, and membrane issues.</p></div>
+      <div class="service-card reveal rd2"><div class="s-icon">📋</div><h3>AMC Contracts</h3><p>Scheduled service plans to keep your purifier running well.</p></div>
+      <div class="service-card reveal rd3"><div class="s-icon">🪛</div><h3>Iron Remover &amp; Softener</h3><p>Treat hard or iron-rich raw water at the source.</p></div>
+      <div class="service-card reveal rd4"><div class="s-icon">⚡</div><h3>Electrical &amp; Plumbing</h3><p>Includes air compressor work to clear blocked pipelines.</p></div>
     </div>
   </div>
 </section>
 
-<!-- GALLERY -->
-<section class="gallery" id="gallery">
+<section class="products" id="products">
   <div class="container">
     <div class="text-center">
-      <div class="eyebrow reveal">Our Store</div>
-      <h2 class="section-title reveal reveal-delay-1">Inside Aalaya Aqua Care.</h2>
-      <p class="section-sub reveal reveal-delay-2" style="margin:0 auto 56px;">A look at our showroom, stock and past installations. Drop your own shop photos into the <code>images/</code> folder using the filenames below and they'll appear automatically.</p>
+      <div class="eyebrow reveal">Our Products &amp; Store</div>
+      <h2 class="section-title reveal rd1">A full range of purifiers,<br>filters and spares — in stock.</h2>
     </div>
-    <div class="gallery-grid">
-      <div class="g-slot g-tall reveal reveal-delay-1">
-        <img src="images/gallery-front.jpg" alt="Shop front view" onerror="this.style.display='none'">
-        <div class="img-fallback"><span class="ic">🏪</span><span>images/gallery-front.jpg</span></div>
-        <div class="g-caption">Front View</div>
+    <div class="gallery-grid reveal rd2" style="margin-top:46px;">
+      <div class="gal-main">
+        <img src="images/shelf-1.jpg" alt="RO purifier display wall at Aalaya Aqua Care store">
+        <div class="gal-tag">Our showroom shelf</div>
       </div>
-      <div class="g-slot reveal reveal-delay-2">
-        <img src="images/gallery-inside-1.jpg" alt="Inside the shop" onerror="this.style.display='none'">
-        <div class="img-fallback"><span class="ic">🚿</span><span>images/gallery-inside-1.jpg</span></div>
-        <div class="g-caption">Purifier Display</div>
+      <div class="gal-side">
+        <div class="slot"><img src="images/shelf-2.jpg" alt="Boxed RO purifiers in stock"></div>
+        <div class="slot"><img src="images/install-1.jpg" alt="RO purifier installed at customer site"></div>
       </div>
-      <div class="g-slot reveal reveal-delay-3">
-        <img src="images/gallery-inside-2.jpg" alt="Purifiers in stock" onerror="this.style.display='none'">
-        <div class="img-fallback"><span class="ic">📦</span><span>images/gallery-inside-2.jpg</span></div>
-        <div class="g-caption">Stock & Spares</div>
-      </div>
-      <div class="g-slot reveal reveal-delay-1">
-        <img src="images/gallery-install-1.jpg" alt="Installed RO unit" onerror="this.style.display='none'">
-        <div class="img-fallback"><span class="ic">🔧</span><span>images/gallery-install-1.jpg</span></div>
-        <div class="g-caption">On-Site Install</div>
-      </div>
-      <div class="g-slot reveal reveal-delay-2">
-        <img src="images/gallery-install-2.jpg" alt="Softener installation" onerror="this.style.display='none'">
-        <div class="img-fallback"><span class="ic">💧</span><span>images/gallery-install-2.jpg</span></div>
-        <div class="g-caption">Softener Setup</div>
-      </div>
-      <div class="g-slot reveal reveal-delay-3">
-        <img src="images/gallery-products.jpg" alt="Product boxes" onerror="this.style.display='none'">
-        <div class="img-fallback"><span class="ic">🛒</span><span>images/gallery-products.jpg</span></div>
-        <div class="g-caption">Ready Stock</div>
-      </div>
+    </div>
+    <div class="products-right">
+      <div class="product-card reveal rd1"><span class="p-icon">🏭</span> Commercial RO Plants</div>
+      <div class="product-card reveal rd2"><span class="p-icon">💧</span> Water Softeners</div>
+      <div class="product-card reveal rd3"><span class="p-icon">🛡</span> UV &amp; UF Purifiers</div>
+      <div class="product-card reveal rd4"><span class="p-icon">🔬</span> RO Filters &amp; Membranes</div>
+      <div class="product-card reveal rd5"><span class="p-icon">🪛</span> Iron Removers</div>
+      <div class="product-card reveal rd6"><span class="p-icon">🔩</span> Spare Parts &amp; Accessories</div>
     </div>
   </div>
 </section>
 
-<!-- BRANDS -->
-<section class="brands">
-  <div class="container">
-    <div class="text-center">
-      <div class="eyebrow reveal">All Brands, One Stop</div>
-      <h2 class="section-title reveal reveal-delay-1">All types of water purifiers<br>available here.</h2>
-      <p class="section-sub reveal reveal-delay-2" style="margin:0 auto 48px;">Sales & service for all major brands — RO + UV + UF + water softeners + iron removers.</p>
-    </div>
-    <div class="brands-grid reveal reveal-delay-2">
-      <div class="brand-chip">Aquaguard</div>
-      <div class="brand-chip">Kent Purifier</div>
-      <div class="brand-chip">LG Purifier</div>
-      <div class="brand-chip">Blue Star Purifier</div>
-      <div class="brand-chip">Pureit Purifier</div>
-      <div class="brand-chip">Livpure Purifier</div>
-      <div class="brand-chip">AO Smith</div>
-      <div class="brand-chip">Water Softeners</div>
-      <div class="brand-chip">Iron Removers</div>
-      <div class="brand-chip">Multimedia Filters</div>
-      <div class="brand-chip">Commercial RO Plants</div>
-      <div class="brand-chip highlight">🌟 Local & assembled purifier service + OEM spares also available</div>
-    </div>
-    <div class="text-center reveal reveal-delay-3" style="margin-top:32px;">
-      <p style="font-size:15px;color:var(--muted);margin-bottom:16px;">Contact us directly for availability and pricing</p>
-      <a href="tel:+919843231128" class="btn-primary" style="display:inline-flex;margin-right:12px;">📞 98432 31128</a>
-      <a href="tel:+919750230022" class="btn-outline" style="display:inline-flex;">📞 97502 30022 (Office)</a>
-    </div>
-  </div>
-</section>
-
-<!-- WHY US -->
 <section class="why">
   <div class="container">
     <div class="eyebrow reveal">Why Choose Aalaya Aqua Care</div>
-    <h2 class="section-title reveal reveal-delay-1" style="margin-bottom:48px;">A local team built around dependable<br>service and clean workmanship.</h2>
+    <h2 class="section-title reveal rd1" style="margin-bottom:46px;">A local team built around dependable<br>service and honest workmanship.</h2>
     <div class="why-grid">
-      <div class="why-item reveal reveal-delay-1"><span class="w-icon">👷</span> Experienced Technicians</div>
-      <div class="why-item reveal reveal-delay-2"><span class="w-icon">✅</span> Genuine Spare Parts</div>
-      <div class="why-item reveal reveal-delay-3"><span class="w-icon">💰</span> Affordable Pricing</div>
-      <div class="why-item reveal reveal-delay-4"><span class="w-icon">🚗</span> Fast Doorstep Service</div>
-      <div class="why-item reveal reveal-delay-1"><span class="w-icon">⭐</span> High-Quality Products</div>
-      <div class="why-item reveal reveal-delay-2"><span class="w-icon">🔧</span> Professional Installation</div>
-      <div class="why-item reveal reveal-delay-3"><span class="w-icon">🎧</span> Reliable Customer Support</div>
-      <div class="why-item reveal reveal-delay-4"><span class="w-icon">🏡</span> Trusted Local Business</div>
+      <div class="why-item reveal rd1"><span class="w-icon">👷</span> Experienced Technicians</div>
+      <div class="why-item reveal rd2"><span class="w-icon">✅</span> Genuine Spare Parts</div>
+      <div class="why-item reveal rd3"><span class="w-icon">💰</span> Affordable Pricing</div>
+      <div class="why-item reveal rd4"><span class="w-icon">🚗</span> Fast Doorstep Service</div>
+      <div class="why-item reveal rd1"><span class="w-icon">⭐</span> 5.0 Rated Locally</div>
+      <div class="why-item reveal rd2"><span class="w-icon">🔧</span> Sales + Service, One Place</div>
+      <div class="why-item reveal rd3"><span class="w-icon">🎧</span> Reliable Support</div>
+      <div class="why-item reveal rd4"><span class="w-icon">🏡</span> Trusted Local Business</div>
     </div>
   </div>
 </section>
 
-<!-- PROCESS -->
-<section>
+<section class="process">
   <div class="container">
     <div class="text-center">
       <div class="eyebrow reveal">Our Process</div>
-      <h2 class="section-title reveal reveal-delay-1">From first call to long-term<br>maintenance, everything stays simple.</h2>
+      <h2 class="section-title reveal rd1">From first call to long-term<br>maintenance, everything stays simple.</h2>
     </div>
     <div class="process-steps">
-      <div class="process-step reveal reveal-delay-1"><div class="step-num">01</div><h3>Contact Us</h3><p>Call, WhatsApp or use the booking form with your purifier or water requirement.</p></div>
-      <div class="process-step reveal reveal-delay-2"><div class="step-num">02</div><h3>Water Assessment</h3><p>We check your raw water TDS and recommend the right system.</p></div>
-      <div class="process-step reveal reveal-delay-3"><div class="step-num">03</div><h3>Installation</h3><p>Technicians install, test and explain the system clearly.</p></div>
-      <div class="process-step reveal reveal-delay-4"><div class="step-num">04</div><h3>Service & Maintenance</h3><p>Scheduled filter changes, AMC and repair support keep water safe.</p></div>
+      <div class="process-step reveal rd1"><div class="step-num">01</div><h3>Contact Us</h3><p>Call, WhatsApp, or book online with your requirement.</p></div>
+      <div class="process-step reveal rd2"><div class="step-num">02</div><h3>Water Check</h3><p>We assess your raw water quality and TDS level.</p></div>
+      <div class="process-step reveal rd3"><div class="step-num">03</div><h3>Installation</h3><p>Technicians install, test, and explain the system clearly.</p></div>
+      <div class="process-step reveal rd4"><div class="step-num">04</div><h3>Service &amp; AMC</h3><p>Scheduled filter changes and repair support keep water safe.</p></div>
     </div>
   </div>
 </section>
 
-<!-- SERVICE AREAS -->
+<section class="reviews">
+  <div class="container">
+    <div class="text-center">
+      <div class="eyebrow reveal">Customer Reviews</div>
+      <h2 class="section-title reveal rd1">What our customers say.</h2>
+      <p class="section-sub reveal rd2" style="margin:0 auto 54px;">Real feedback from Google, shared by customers across Sirkali and Mayiladuthurai.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card reveal rd1">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">A customer praised the team's professionalism and the quality of service at reasonable pricing, covering the Sirkali and Mayiladuthurai region.</p>
+        <div class="reviewer"><div class="reviewer-avatar">G</div><div class="reviewer-info"><strong>Google Customer</strong><span>Verified review</span></div></div>
+      </div>
+      <div class="review-card reveal rd2">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">A customer described a smooth RO installation carried out for a government primary school, noting the clean and careful work.</p>
+        <div class="reviewer"><div class="reviewer-avatar">G</div><div class="reviewer-info"><strong>Google Customer</strong><span>Verified review</span></div></div>
+      </div>
+      <div class="review-card reveal rd3">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">Another reviewer repeated praise for the professional, quality-focused team and encouraged them to keep up the good work.</p>
+        <div class="reviewer"><div class="reviewer-avatar">G</div><div class="reviewer-info"><strong>Google Customer</strong><span>Verified review</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="areas-section">
   <div class="areas reveal scale-up">
     <div class="areas-left">
       <div class="eyebrow">Service Areas</div>
       <h2>RO service coverage across Sirkali and nearby towns.</h2>
-      <p>Serving Sirkali, Vilanthidasamuthiram, Mayiladuthurai, Tharangambadi, Poompuhar, Chidambaram, nearby towns and surrounding villages.</p>
+      <p>Serving Sirkali, Mayiladuthurai, Chidambaram, and surrounding towns and villages for sales, installation, and repair.</p>
     </div>
     <div class="areas-tags">
       <span class="area-tag">Sirkali</span>
-      <span class="area-tag">Vilanthidasamuthiram</span>
       <span class="area-tag">Mayiladuthurai</span>
-      <span class="area-tag">Tharangambadi</span>
-      <span class="area-tag">Poompuhar</span>
       <span class="area-tag">Chidambaram</span>
+      <span class="area-tag">Tharangambadi</span>
       <span class="area-tag">Kollidam</span>
-      <span class="area-tag">Nearby towns & villages</span>
+      <span class="area-tag">Sembanarkoil</span>
+      <span class="area-tag">Vaitheeswarankoil</span>
+      <span class="area-tag">Nearby towns &amp; villages</span>
     </div>
   </div>
 </div>
 
-<!-- CONTACT -->
-<section id="contact">
+<section class="contact" id="contact">
   <div class="container">
     <div class="contact-intro">
       <div class="eyebrow reveal">Contact Aalaya Aqua Care</div>
-      <h2 class="section-title reveal reveal-delay-1">Need RO service or a new<br>purifier? Let's help today.</h2>
-      <p class="section-sub reveal reveal-delay-2">Call directly for urgent service, send a WhatsApp message, or request a quote through the form below.</p>
+      <h2 class="section-title reveal rd1">Need RO service or a new<br>purifier? Let's help today.</h2>
+      <p class="section-sub reveal rd2">Call directly for urgent service, send a WhatsApp message, or request a quote through the form.</p>
     </div>
     <div class="contact-grid">
       <div class="contact-info reveal from-left">
         <h3>Aalaya Aqua Care</h3>
-        <p class="addr">Rahamed Building (Near Petrol Bunk), CDM Road,<br>Vilanthidasamuthiram, Sirkali, Tamil Nadu</p>
-        <div class="contact-phone-box">
-          <div class="label">Phone</div>
-          <div class="number">+91 98432 31128</div>
-          <div class="number" style="font-size:17px;color:#bcd6e0;font-weight:700;margin-top:4px;">Office: +91 97502 30022</div>
-        </div>
+        <p class="addr">Rahamed Building, Near Petrol Bunk, CDM Main Road, Vilanthidasamuthiram, Sirkali, Tamil Nadu</p>
+        <div class="contact-phone-box"><div class="label">Phone / WhatsApp</div><div class="number">+91 98432 31128</div></div>
         <div class="contact-btns">
-          <a class="btn-teal" href="tel:+919843231128">📞 Click to Call</a>
-          <a class="btn-green" href="https://wa.me/919843231128" target="_blank">💬 WhatsApp</a>
+          <a class="btn-teal ripple" href="tel:+919843231128">📞 Click to Call</a>
+          <a class="btn-green ripple" href="https://wa.me/919843231128" target="_blank">💬 WhatsApp</a>
         </div>
-        <div class="map-box">
-          <iframe src="https://www.google.com/maps?q=Aalaya+Aqua+Care+RO+Water+Purifiers+Sirkali&ll=11.2454754,79.7327181&z=15&output=embed" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div class="hours-box">
+          <strong>Business Hours</strong><br>
+          Mon – Sat: 9:00 AM – 8:30 PM<br>
+          Sunday: 9:00 AM – 2:00 PM
+        </div>
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=Aalaya+Aqua+Care+Sirkali&z=16&output=embed" width="100%" height="230" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
       </div>
+
       <div class="contact-form reveal from-right">
         <h3>Request a Free Quote</h3>
         <p class="form-sub">Share your requirement and the team will contact you for purifier sales, installation, repair, AMC, or water testing.</p>
         <form id="waForm" onsubmit="sendToWhatsApp(event)">
-          <div class="form-row">
-            <div class="form-group">
-              <label>Name</label>
-              <input type="text" name="name" placeholder="Your name" required>
-            </div>
-            <div class="form-group">
-              <label>Phone</label>
-              <input type="tel" name="phone" placeholder="Mobile number" pattern="[0-9]{10}" required>
-            </div>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="Mobile number" required>
           </div>
           <div class="form-group">
             <label>Service Needed</label>
             <select name="service" required>
-              <option value="">Select a service…</option>
-              <option>Water purifier installation</option>
-              <option>Water purifier service</option>
-              <option>AMC maintenance</option>
-              <option>OEM spares available</option>
-              <option>Aquaguard service</option>
-              <option>Kent service</option>
-              <option>Livpure service</option>
-              <option>Pureit service</option>
-              <option>AO Smith service</option>
-              <option>Other brand</option>
-              <option>Domestic RO enquiry</option>
-              <option>Commercial / industrial RO enquiry</option>
+              <option value="">Select a service...</option>
+              <option>New RO Purifier Installation</option>
+              <option>RO Service / Repair</option>
+              <option>AMC Maintenance</option>
+              <option>Filter / Membrane Replacement</option>
+              <option>Iron Remover</option>
+              <option>Water Softener</option>
+              <option>Commercial / Industrial RO</option>
+              <option>Electrical / Plumbing Work</option>
+              <option>Other Requirement</option>
             </select>
           </div>
           <div class="form-group">
             <label>Message</label>
             <textarea name="message" placeholder="Tell us about your water purifier or project requirement"></textarea>
           </div>
-          <button type="submit" class="btn-submit">Request a Quote</button>
+          <button type="submit" class="btn-submit ripple">Request a Quote</button>
         </form>
-        <div class="form-success" id="formSuccess">✅ Opening WhatsApp with your quote request…</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-grid">
-    <div class="footer-brand reveal">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
-        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="50" cy="50" rx="48" ry="34" fill="#0f6fa8" stroke="#5fd0d8" stroke-width="2"/>
-          <text x="50" y="46" text-anchor="middle" font-family="Fraunces, serif" font-weight="800" font-size="16" fill="#fff">AALAYA</text>
-          <text x="50" y="61" text-anchor="middle" font-family="Manrope, sans-serif" font-weight="700" font-size="8" fill="#dff8fa" letter-spacing="1.2">AQUA CARE</text>
-        </svg>
-        <span style="font-family:'Fraunces',serif;font-size:19px;font-weight:700;color:#fff;">Aalaya Aqua Care</span>
-      </div>
-      <p>RO water purifier sales, installation, repair and AMC support in Sirkali, Vilanthidasamuthiram, Mayiladuthurai and nearby areas.</p>
+    <div class="footer-col">
+      <div class="footer-brand"><img src="images/logo.png" alt="Aalaya Aqua Care"><span>Aalaya Aqua Care</span></div>
+      <p class="desc">RO water purifier sales, installation, repair, AMC, and water treatment support in Sirkali, Mayiladuthurai, and Chidambaram.</p>
       <div class="footer-socials">
         <a href="https://wa.me/919843231128" target="_blank" title="WhatsApp">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         </a>
-        <a href="tel:+919843231128" title="Call">📞</a>
+        <a href="tel:+919843231128" title="Call">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.57.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.01l-2.2 2.21z"/></svg>
+        </a>
+        <a href="https://www.google.com/maps?q=Aalaya+Aqua+Care+Sirkali" target="_blank" title="Google Maps">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.4 8 12 8 12s8-6.6 8-12c0-4.4-3.6-8-8-8zm0 11a3 3 0 110-6 3 3 0 010 6z"/></svg>
+        </a>
       </div>
     </div>
-    <div class="footer-col reveal reveal-delay-1">
+
+    <div class="footer-col">
       <h4>Quick Links</h4>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#gallery">Our Store</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#book">Book Now</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
-    <div class="footer-col reveal reveal-delay-2">
+
+    <div class="footer-col">
       <h4>Services</h4>
       <ul>
-        <li><a href="#">RO Installation</a></li>
-        <li><a href="#">RO Repair & Maintenance</a></li>
-        <li><a href="#">AMC Contracts</a></li>
-        <li><a href="#">Water Quality Testing</a></li>
+        <li><a href="#services">RO Installation</a></li>
+        <li><a href="#services">RO Repair &amp; Maintenance</a></li>
+        <li><a href="#services">AMC Contracts</a></li>
+        <li><a href="#services">Iron Remover &amp; Softener</a></li>
+        <li><a href="#services">Electrical &amp; Plumbing</a></li>
       </ul>
     </div>
-    <div class="footer-col reveal reveal-delay-3">
+
+    <div class="footer-col">
       <h4>Contact Details</h4>
       <p class="contact-detail">
-        Rahamed Building (Near Petrol Bunk), CDM Road,<br>
-        Vilanthidasamuthiram, Sirkali, Tamil Nadu<br><br>
-        +91 98432 31128 | +91 97502 30022<br><br>
-        Business Hours: Mon–Sun, 9:00 AM – 8:30 PM
+        Rahamed Building, Near Petrol Bunk,<br>
+        CDM Main Road, Vilanthidasamuthiram,<br>
+        Sirkali, Tamil Nadu<br><br>
+        +91 98432 31128<br><br>
+        Mon–Sat: 9:00 AM–8:30 PM<br>
+        Sun: 9:00 AM–2:00 PM
       </p>
     </div>
   </div>
+
   <div class="footer-bottom">
     <p>Copyright © 2026 Aalaya Aqua Care. All Rights Reserved.</p>
-    <p>RO Water Purifier Sirkali & Vilanthidasamuthiram</p>
+    <p>RO Water Purifier Sirkali · Mayiladuthurai · Chidambaram</p>
   </div>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
 <a class="float-wa" href="https://wa.me/919843231128" target="_blank" title="Chat on WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
 </a>
 
 <script>
-  // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
+      if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-  // Trigger hero elements immediately
   document.querySelectorAll('.hero .reveal, .hero-wrap .reveal').forEach(el => {
     setTimeout(() => el.classList.add('visible'), 100);
   });
 
-  // Nav shadow on scroll
   const nav = document.getElementById('mainNav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 20);
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+
+  // ripple effect
+  document.querySelectorAll('.ripple').forEach(btn => {
+    btn.addEventListener('click', function(e){
+      const rect = this.getBoundingClientRect();
+      this.style.setProperty('--rx', (e.clientX - rect.left) + 'px');
+      this.style.setProperty('--ry', (e.clientY - rect.top) + 'px');
+      this.classList.remove('rippling'); void this.offsetWidth; this.classList.add('rippling');
+    });
   });
 
-  const WA_NUMBER = "919843231128";
-
-  // Quick booking card (hero) -> WhatsApp
-  function sendQuickBooking(e) {
-    e.preventDefault();
-    const form = document.getElementById('quickBookForm');
-    const name = form.querySelector('[name="qname"]').value || '';
-    const phone = form.querySelector('[name="qphone"]').value || '';
-    const service = form.querySelector('[name="qservice"]').value || '';
-    const text = encodeURIComponent(
-      "💧 *Aalaya Aqua Care – Booking Request*\n\n" +
-      "👤 *Name:* " + name + "\n" +
-      "📱 *Phone:* " + phone + "\n" +
-      "🔧 *Service Needed:* " + service
-    );
-    window.open("https://wa.me/" + WA_NUMBER + "?text=" + text, "_blank");
-  }
-
-  // Full quote form -> WhatsApp
-  function sendToWhatsApp(e) {
+  function sendToWhatsApp(e){
     e.preventDefault();
     const form = document.getElementById('waForm');
     const name = form.querySelector('[name="name"]').value || '';
@@ -752,16 +700,30 @@
     const service = form.querySelector('[name="service"]').value || '';
     const message = form.querySelector('[name="message"]').value || '';
     const text = encodeURIComponent(
-      "🌊 *Aalaya Aqua Care – Quote Request*\n\n" +
+      "💧 *Aalaya Aqua Care – Quote Request*\n\n" +
       "👤 *Name:* " + name + "\n" +
       "📱 *Phone:* " + phone + "\n" +
       "🔧 *Service Needed:* " + service + "\n" +
       "💬 *Message:* " + message
     );
-    const successBox = document.getElementById('formSuccess');
-    successBox.classList.add('show');
-    window.open("https://wa.me/" + WA_NUMBER + "?text=" + text, "_blank");
-    setTimeout(() => { form.reset(); successBox.classList.remove('show'); }, 4000);
+    window.open("https://wa.me/919843231128?text=" + text, "_blank");
+  }
+
+  function sendQuickBook(e){
+    e.preventDefault();
+    const form = document.getElementById('quickBookForm');
+    const name = form.querySelector('[name="name"]').value || '';
+    const phone = form.querySelector('[name="phone"]').value || '';
+    const service = form.querySelector('[name="service"]').value || '';
+    const date = form.querySelector('[name="date"]').value || 'Not specified';
+    const text = encodeURIComponent(
+      "📅 *Aalaya Aqua Care – Booking Request*\n\n" +
+      "👤 *Name:* " + name + "\n" +
+      "📱 *Phone:* " + phone + "\n" +
+      "🔧 *Service:* " + service + "\n" +
+      "🗓️ *Preferred Date:* " + date
+    );
+    window.open("https://wa.me/919843231128?text=" + text, "_blank");
   }
 </script>
 </body>
