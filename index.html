@@ -124,9 +124,15 @@
   .text-center{text-align:center;}
 
   /* ABOUT */
-  .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
-  .about-img{border-radius:20px;overflow:hidden;height:400px;background:var(--bg-soft);box-shadow:0 20px 50px rgba(7,48,74,.12);}
+  .about-inner{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+  .about-img{border-radius:20px;overflow:hidden;aspect-ratio:12/5;background:var(--bg-soft);box-shadow:0 20px 50px rgba(7,48,74,.12);}
   .about-img img{width:100%;height:100%;object-fit:cover;}
+  .install-strip{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px;}
+  .install-strip figure{margin:0;border-radius:16px;overflow:hidden;aspect-ratio:1/1;position:relative;box-shadow:0 14px 32px rgba(7,48,74,.1);}
+  .install-strip figure img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+  .install-strip figure:hover img{transform:scale(1.06);}
+  .install-strip figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(0deg,rgba(7,48,74,.85),transparent);
+    color:#fff;font-size:12.5px;font-weight:700;padding:26px 14px 12px;}
   .about-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px;}
   .about-feature{display:flex;align-items:center;gap:10px;font-size:14.5px;font-weight:700;color:#334a5e;
     background:var(--bg-soft);border:1px solid var(--line);border-radius:11px;padding:13px 16px;transition:border-color .2s,color .2s,transform .2s;}
@@ -397,8 +403,14 @@
 <section class="about" id="about">
   <div class="container">
     <div class="about-inner">
-      <div class="about-img reveal from-left">
-        <img src="images/shopfront.jpg" alt="Aalaya Aqua Care Shop Front, Sirkali">
+      <div class="reveal from-left">
+        <div class="about-img">
+          <img src="images/shopfront.jpg" alt="Aalaya Aqua Care Shop Front, Sirkali">
+        </div>
+        <div class="install-strip">
+          <figure><img src="images/install-sq-wall.jpg" alt="Wall-mounted RO unit installed by Aalaya Aqua Care"><figcaption>Wall-mounted RO install</figcaption></figure>
+          <figure><img src="images/install-sq-pipe.jpg" alt="Water softener plumbing installed by Aalaya Aqua Care"><figcaption>Softener &amp; plumbing work</figcaption></figure>
+        </div>
       </div>
       <div>
         <div class="eyebrow reveal">About Aalaya Aqua Care</div>
@@ -448,7 +460,7 @@
       </div>
       <div class="gal-side">
         <div class="slot"><img src="images/shelf-2.jpg" alt="Boxed RO purifiers in stock"></div>
-        <div class="slot"><img src="images/install-1.jpg" alt="RO purifier installed at customer site"></div>
+        <div class="slot"><img src="images/install-main.jpg" alt="RO purifier installed at customer site"></div>
       </div>
     </div>
     <div class="products-right">
